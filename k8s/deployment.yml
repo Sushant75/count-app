@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: calinrus/hit-counter
+        image: sushant75/count-app # Remove this with the image name that you pushed to your docker hub repository
         ports:
         - containerPort: 5000
         resources:

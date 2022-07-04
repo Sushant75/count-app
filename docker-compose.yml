@@ -1,9 +1,8 @@
 version: '2'
 services:
   myapp:
-    build: .
+    image: sushant75/count-app  # Remove this with the image name that you pushed to your docker hub repository
     ports:
      - "80:5000"
   redis-lb:
-    image: "redis:alpine"
-
+    image: "redis:alpine" 

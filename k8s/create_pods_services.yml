@@ -6,7 +6,7 @@ metadata:
     app: myapp
 spec:
   containers:
-    - image: calinrus/hit-counter
+    - image: 369674659158.dkr.ecr.us-east-2.amazonaws.com/count-app:count-app
       name: myapp
       ports:
         - containerPort: 5000
