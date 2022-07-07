@@ -124,7 +124,29 @@ You can test your application and its dependency (Redis) using docker-compose.
 
  # Deployment the web app on EKS Cluster
 
- 
+ <p>Make sure you have `eksctl` and aws-cli is installed on a system on which you are running the tests. Configure the aws cli with the right credentials by using this command:</p>
+<b>
+
+ *<p>aws configure</p>*
+
+ <br>
+
+ <p>Now, stop the minikube cluster and create an EKS cluster by using this command.</p>
+
+ *<p>minikube stop</p>*
+
+ <br>
+
+ eksctl create cluster \
+> --name count-app \
+> --version 1.22 \
+> --region us-east-1 \
+> --nodegroup-name count-app \
+> --node-type t2.medium \
+> --nodes 1
+
+
+
 
 
 
